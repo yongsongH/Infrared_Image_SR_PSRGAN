@@ -2,7 +2,7 @@
 
 Official PyTorch implementation of the paper [Infrared Image Super-Resolution via Transfer Learning and PSRGAN](https://ieeexplore.ieee.org/abstract/document/9424970/) accepted in [IEEE SPL](https://signalprocessingsociety.org/tags/ieee-spl-article).
 
-[Yongsong HUANG Homepage](https://hyongsong.work/) &#x1F601;
+[Yongsong HUANG's Homepage](https://hyongsong.work/) &#x1F601;
 
 ## Introduction
 
