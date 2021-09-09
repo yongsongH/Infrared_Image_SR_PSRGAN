@@ -1,0 +1,32 @@
+21-09-08 22:09:50.373 : Model path: model_zoo\75000_G.pth
+21-09-08 22:09:50.375 : Params number: 349664
+21-09-08 22:09:50.375 : model_name:75000_G, image sigma:0
+21-09-08 22:09:50.375 : testsets\results-A
+21-09-08 22:10:45.417 : Model path: model_zoo\75000_G.pth
+21-09-08 22:10:45.419 : Params number: 349664
+21-09-08 22:10:45.419 : model_name:75000_G, image sigma:0
+21-09-08 22:10:45.419 : testsets\results-A
+21-09-08 22:10:51.102 : fused1.png - PSNR: 31.10 dB; SSIM: 0.8213.
+21-09-08 22:10:52.001 : fused10.png - PSNR: 31.65 dB; SSIM: 0.7621.
+21-09-08 22:10:52.465 : fused11.png - PSNR: 36.35 dB; SSIM: 0.8582.
+21-09-08 22:10:52.950 : fused12.png - PSNR: 32.48 dB; SSIM: 0.7826.
+21-09-08 22:10:53.520 : fused13.png - PSNR: 30.94 dB; SSIM: 0.8036.
+21-09-08 22:10:54.296 : fused14.png - PSNR: 32.58 dB; SSIM: 0.8196.
+21-09-08 22:10:55.195 : fused15.png - PSNR: 30.20 dB; SSIM: 0.8183.
+21-09-08 22:10:55.878 : fused16.png - PSNR: 34.78 dB; SSIM: 0.8638.
+21-09-08 22:10:56.451 : fused17.png - PSNR: 35.72 dB; SSIM: 0.8547.
+21-09-08 22:10:57.021 : fused18.png - PSNR: 34.27 dB; SSIM: 0.7830.
+21-09-08 22:10:57.585 : fused19.png - PSNR: 29.75 dB; SSIM: 0.7305.
+21-09-08 22:10:58.180 : fused2.png - PSNR: 30.28 dB; SSIM: 0.8798.
+21-09-08 22:10:59.000 : fused20.png - PSNR: 31.42 dB; SSIM: 0.7384.
+21-09-08 22:10:59.674 : fused21.png - PSNR: 29.58 dB; SSIM: 0.8361.
+21-09-08 22:11:00.264 : fused22.png - PSNR: 29.75 dB; SSIM: 0.7305.
+21-09-08 22:11:00.837 : fused3.png - PSNR: 34.86 dB; SSIM: 0.8869.
+21-09-08 22:11:01.426 : fused4.png - PSNR: 28.49 dB; SSIM: 0.7902.
+21-09-08 22:11:01.787 : fused5.png - PSNR: 33.61 dB; SSIM: 0.7853.
+21-09-08 22:11:02.506 : fused6.png - PSNR: 31.30 dB; SSIM: 0.8255.
+21-09-08 22:11:03.085 : fused7.png - PSNR: 35.67 dB; SSIM: 0.9175.
+21-09-08 22:11:03.355 : fused8.png - PSNR: 24.77 dB; SSIM: 0.5360.
+21-09-08 22:11:04.069 : fused9.png - PSNR: 30.17 dB; SSIM: 0.7795.
+21-09-08 22:11:04.309 : Average PSNR/SSIM(RGB) - results-A_75000_G - x4 --PSNR: 31.80 dB; SSIM: 0.8001
+21-09-08 22:11:04.309 : Average PSNR/SSIM( Y ) - results-A_75000_G - x4 - PSNR: 33.13 dB; SSIM: 0.8282

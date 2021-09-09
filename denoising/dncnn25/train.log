@@ -1,0 +1,549 @@
+20-05-18 19:21:22.930 :   task: dncnn25
+  model: plain
+  gpu_ids: [0]
+  scale: 1
+  n_channels: 1
+  sigma: 25
+  sigma_test: 25
+  merge_bn: True
+  merge_bn_startpoint: 400000
+  path:[
+    root: denoising
+    pretrained_netG: None
+    task: denoising\dncnn25
+    log: denoising\dncnn25
+    options: denoising\dncnn25\options
+    models: denoising\dncnn25\models
+    images: denoising\dncnn25\images
+  ]
+  datasets:[
+    train:[
+      name: train_dataset
+      dataset_type: dncnn
+      dataroot_H: trainsets/trainH
+      dataroot_L: None
+      H_size: 40
+      dataloader_shuffle: True
+      dataloader_num_workers: 8
+      dataloader_batch_size: 64
+      phase: train
+      scale: 1
+      n_channels: 1
+    ]
+    test:[
+      name: test_dataset
+      dataset_type: dncnn
+      dataroot_H: testsets/bsd68
+      dataroot_L: None
+      phase: test
+      scale: 1
+      n_channels: 1
+    ]
+  ]
+  netG:[
+    net_type: dncnn
+    in_nc: 1
+    out_nc: 1
+    nc: 64
+    nb: 17
+    gc: 32
+    ng: 2
+    reduction: 16
+    act_mode: BR
+    upsample_mode: convtranspose
+    downsample_mode: strideconv
+    init_type: orthogonal
+    init_bn_type: uniform
+    init_gain: 0.2
+    scale: 1
+  ]
+  train:[
+    G_lossfn_type: l1
+    G_lossfn_weight: 1.0
+    G_optimizer_type: adam
+    G_optimizer_lr: 0.0001
+    G_optimizer_clipgrad: None
+    G_scheduler_type: MultiStepLR
+    G_scheduler_milestones: [200000, 400000, 600000, 800000, 1000000, 2000000]
+    G_scheduler_gamma: 0.5
+    G_regularizer_orthstep: None
+    G_regularizer_clipstep: None
+    checkpoint_test: 5000
+    checkpoint_save: 5000
+    checkpoint_print: 200
+  ]
+  opt_path: options/train_dncnn.json
+  is_train: True
+
+20-05-18 19:21:22.930 : Random seed: 6463
+20-05-18 19:21:32.587 :   task: dncnn25
+  model: plain
+  gpu_ids: [0]
+  scale: 1
+  n_channels: 1
+  sigma: 25
+  sigma_test: 25
+  merge_bn: True
+  merge_bn_startpoint: 400000
+  path:[
+    root: denoising
+    pretrained_netG: None
+    task: denoising\dncnn25
+    log: denoising\dncnn25
+    options: denoising\dncnn25\options
+    models: denoising\dncnn25\models
+    images: denoising\dncnn25\images
+  ]
+  datasets:[
+    train:[
+      name: train_dataset
+      dataset_type: dncnn
+      dataroot_H: trainsets/trainH
+      dataroot_L: None
+      H_size: 40
+      dataloader_shuffle: True
+      dataloader_num_workers: 8
+      dataloader_batch_size: 64
+      phase: train
+      scale: 1
+      n_channels: 1
+    ]
+    test:[
+      name: test_dataset
+      dataset_type: dncnn
+      dataroot_H: testsets/bsd68
+      dataroot_L: None
+      phase: test
+      scale: 1
+      n_channels: 1
+    ]
+  ]
+  netG:[
+    net_type: dncnn
+    in_nc: 1
+    out_nc: 1
+    nc: 64
+    nb: 17
+    gc: 32
+    ng: 2
+    reduction: 16
+    act_mode: BR
+    upsample_mode: convtranspose
+    downsample_mode: strideconv
+    init_type: orthogonal
+    init_bn_type: uniform
+    init_gain: 0.2
+    scale: 1
+  ]
+  train:[
+    G_lossfn_type: l1
+    G_lossfn_weight: 1.0
+    G_optimizer_type: adam
+    G_optimizer_lr: 0.0001
+    G_optimizer_clipgrad: None
+    G_scheduler_type: MultiStepLR
+    G_scheduler_milestones: [200000, 400000, 600000, 800000, 1000000, 2000000]
+    G_scheduler_gamma: 0.5
+    G_regularizer_orthstep: None
+    G_regularizer_clipstep: None
+    checkpoint_test: 5000
+    checkpoint_save: 5000
+    checkpoint_print: 200
+  ]
+  opt_path: options/train_dncnn.json
+  is_train: True
+
+20-05-18 19:21:32.587 : Random seed: 1126
+20-05-18 19:21:32.587 : Number of train images: 1,000, iters: 16
+20-05-18 19:27:26.368 :   task: dncnn25
+  model: plain
+  gpu_ids: [0]
+  scale: 1
+  n_channels: 1
+  sigma: 25
+  sigma_test: 25
+  merge_bn: True
+  merge_bn_startpoint: 400000
+  path:[
+    root: denoising
+    pretrained_netG: None
+    task: denoising\dncnn25
+    log: denoising\dncnn25
+    options: denoising\dncnn25\options
+    models: denoising\dncnn25\models
+    images: denoising\dncnn25\images
+  ]
+  datasets:[
+    train:[
+      name: train_dataset
+      dataset_type: dncnn
+      dataroot_H: trainsets/trainH
+      dataroot_L: None
+      H_size: 40
+      dataloader_shuffle: True
+      dataloader_num_workers: 8
+      dataloader_batch_size: 64
+      phase: train
+      scale: 1
+      n_channels: 1
+    ]
+    test:[
+      name: test_dataset
+      dataset_type: dncnn
+      dataroot_H: testsets/results-A
+      dataroot_L: None
+      phase: test
+      scale: 1
+      n_channels: 1
+    ]
+  ]
+  netG:[
+    net_type: dncnn
+    in_nc: 1
+    out_nc: 1
+    nc: 64
+    nb: 17
+    gc: 32
+    ng: 2
+    reduction: 16
+    act_mode: BR
+    upsample_mode: convtranspose
+    downsample_mode: strideconv
+    init_type: orthogonal
+    init_bn_type: uniform
+    init_gain: 0.2
+    scale: 1
+  ]
+  train:[
+    G_lossfn_type: l1
+    G_lossfn_weight: 1.0
+    G_optimizer_type: adam
+    G_optimizer_lr: 0.0001
+    G_optimizer_clipgrad: None
+    G_scheduler_type: MultiStepLR
+    G_scheduler_milestones: [200000, 400000, 600000, 800000, 1000000, 2000000]
+    G_scheduler_gamma: 0.5
+    G_regularizer_orthstep: None
+    G_regularizer_clipstep: None
+    checkpoint_test: 5000
+    checkpoint_save: 5000
+    checkpoint_print: 200
+  ]
+  opt_path: options/train_dncnn.json
+  is_train: True
+
+20-05-18 19:27:26.368 : Random seed: 733
+20-05-18 19:27:26.368 : Number of train images: 1,000, iters: 16
+20-05-18 19:27:36.603 :   task: dncnn25
+  model: plain
+  gpu_ids: [0]
+  scale: 1
+  n_channels: 1
+  sigma: 25
+  sigma_test: 25
+  merge_bn: True
+  merge_bn_startpoint: 400000
+  path:[
+    root: denoising
+    pretrained_netG: None
+    task: denoising\dncnn25
+    log: denoising\dncnn25
+    options: denoising\dncnn25\options
+    models: denoising\dncnn25\models
+    images: denoising\dncnn25\images
+  ]
+  datasets:[
+    train:[
+      name: train_dataset
+      dataset_type: dncnn
+      dataroot_H: trainsets/trainH
+      dataroot_L: None
+      H_size: 40
+      dataloader_shuffle: True
+      dataloader_num_workers: 8
+      dataloader_batch_size: 64
+      phase: train
+      scale: 1
+      n_channels: 1
+    ]
+    test:[
+      name: test_dataset
+      dataset_type: dncnn
+      dataroot_H: testsets/results-A
+      dataroot_L: None
+      phase: test
+      scale: 1
+      n_channels: 1
+    ]
+  ]
+  netG:[
+    net_type: dncnn
+    in_nc: 1
+    out_nc: 1
+    nc: 64
+    nb: 17
+    gc: 32
+    ng: 2
+    reduction: 16
+    act_mode: BR
+    upsample_mode: convtranspose
+    downsample_mode: strideconv
+    init_type: orthogonal
+    init_bn_type: uniform
+    init_gain: 0.2
+    scale: 1
+  ]
+  train:[
+    G_lossfn_type: l1
+    G_lossfn_weight: 1.0
+    G_optimizer_type: adam
+    G_optimizer_lr: 0.0001
+    G_optimizer_clipgrad: None
+    G_scheduler_type: MultiStepLR
+    G_scheduler_milestones: [200000, 400000, 600000, 800000, 1000000, 2000000]
+    G_scheduler_gamma: 0.5
+    G_regularizer_orthstep: None
+    G_regularizer_clipstep: None
+    checkpoint_test: 5000
+    checkpoint_save: 5000
+    checkpoint_print: 200
+  ]
+  opt_path: options/train_dncnn.json
+  is_train: True
+
+20-05-18 19:27:36.603 : Random seed: 2054
+20-05-18 19:27:36.603 : Number of train images: 1,000, iters: 16
+20-05-18 19:27:47.352 :   task: dncnn25
+  model: plain
+  gpu_ids: [0]
+  scale: 1
+  n_channels: 1
+  sigma: 25
+  sigma_test: 25
+  merge_bn: True
+  merge_bn_startpoint: 400000
+  path:[
+    root: denoising
+    pretrained_netG: None
+    task: denoising\dncnn25
+    log: denoising\dncnn25
+    options: denoising\dncnn25\options
+    models: denoising\dncnn25\models
+    images: denoising\dncnn25\images
+  ]
+  datasets:[
+    train:[
+      name: train_dataset
+      dataset_type: dncnn
+      dataroot_H: trainsets/trainH
+      dataroot_L: None
+      H_size: 40
+      dataloader_shuffle: True
+      dataloader_num_workers: 8
+      dataloader_batch_size: 64
+      phase: train
+      scale: 1
+      n_channels: 1
+    ]
+    test:[
+      name: test_dataset
+      dataset_type: dncnn
+      dataroot_H: testsets/results-A
+      dataroot_L: None
+      phase: test
+      scale: 1
+      n_channels: 1
+    ]
+  ]
+  netG:[
+    net_type: dncnn
+    in_nc: 1
+    out_nc: 1
+    nc: 64
+    nb: 17
+    gc: 32
+    ng: 2
+    reduction: 16
+    act_mode: BR
+    upsample_mode: convtranspose
+    downsample_mode: strideconv
+    init_type: orthogonal
+    init_bn_type: uniform
+    init_gain: 0.2
+    scale: 1
+  ]
+  train:[
+    G_lossfn_type: l1
+    G_lossfn_weight: 1.0
+    G_optimizer_type: adam
+    G_optimizer_lr: 0.0001
+    G_optimizer_clipgrad: None
+    G_scheduler_type: MultiStepLR
+    G_scheduler_milestones: [200000, 400000, 600000, 800000, 1000000, 2000000]
+    G_scheduler_gamma: 0.5
+    G_regularizer_orthstep: None
+    G_regularizer_clipstep: None
+    checkpoint_test: 5000
+    checkpoint_save: 5000
+    checkpoint_print: 200
+  ]
+  opt_path: options/train_dncnn.json
+  is_train: True
+
+20-05-18 19:27:47.352 : Random seed: 6662
+20-05-18 19:27:47.352 : Number of train images: 1,000, iters: 16
+20-05-18 19:27:51.134 : 
+Networks name: DnCNN
+Params number: 557057
+Net structure:
+DnCNN(
+  (model): Sequential(
+    (0): Conv2d(1, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (1): ReLU(inplace)
+    (2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (3): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (4): ReLU(inplace)
+    (5): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (6): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (7): ReLU(inplace)
+    (8): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (9): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (10): ReLU(inplace)
+    (11): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (12): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (13): ReLU(inplace)
+    (14): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (15): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (16): ReLU(inplace)
+    (17): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (18): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (19): ReLU(inplace)
+    (20): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (21): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (22): ReLU(inplace)
+    (23): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (24): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (25): ReLU(inplace)
+    (26): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (27): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (28): ReLU(inplace)
+    (29): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (30): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (31): ReLU(inplace)
+    (32): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (33): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (34): ReLU(inplace)
+    (35): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (36): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (37): ReLU(inplace)
+    (38): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (39): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (40): ReLU(inplace)
+    (41): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (42): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (43): ReLU(inplace)
+    (44): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+    (45): BatchNorm2d(64, eps=0.0001, momentum=0.9, affine=True, track_running_stats=True)
+    (46): ReLU(inplace)
+    (47): Conv2d(64, 1, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  )
+)
+
+20-05-18 19:27:51.759 : 
+ |  mean  |  min   |  max   |  std   || param_name          
+ | -0.000 | -0.063 |  0.069 |  0.025 || model.0.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.0.bias
+ |  0.000 | -0.034 |  0.033 |  0.008 || model.2.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.2.bias
+ |  0.506 |  0.105 |  0.998 |  0.264 || model.3.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.3.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.3.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.3.running_var
+ | -0.000 | -0.036 |  0.032 |  0.008 || model.5.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.5.bias
+ |  0.578 |  0.101 |  1.000 |  0.246 || model.6.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.6.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.6.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.6.running_var
+ | -0.000 | -0.037 |  0.034 |  0.008 || model.8.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.8.bias
+ |  0.522 |  0.107 |  0.997 |  0.270 || model.9.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.9.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.9.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.9.running_var
+ |  0.000 | -0.040 |  0.031 |  0.008 || model.11.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.11.bias
+ |  0.540 |  0.143 |  0.999 |  0.237 || model.12.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.12.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.12.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.12.running_var
+ |  0.000 | -0.031 |  0.033 |  0.008 || model.14.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.14.bias
+ |  0.518 |  0.100 |  0.976 |  0.284 || model.15.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.15.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.15.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.15.running_var
+ |  0.000 | -0.037 |  0.033 |  0.008 || model.17.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.17.bias
+ |  0.504 |  0.120 |  0.993 |  0.250 || model.18.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.18.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.18.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.18.running_var
+ | -0.000 | -0.036 |  0.035 |  0.008 || model.20.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.20.bias
+ |  0.497 |  0.103 |  0.976 |  0.273 || model.21.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.21.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.21.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.21.running_var
+ | -0.000 | -0.039 |  0.034 |  0.008 || model.23.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.23.bias
+ |  0.511 |  0.102 |  0.982 |  0.236 || model.24.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.24.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.24.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.24.running_var
+ |  0.000 | -0.035 |  0.033 |  0.008 || model.26.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.26.bias
+ |  0.531 |  0.123 |  0.981 |  0.228 || model.27.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.27.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.27.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.27.running_var
+ | -0.000 | -0.037 |  0.036 |  0.008 || model.29.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.29.bias
+ |  0.601 |  0.138 |  0.979 |  0.249 || model.30.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.30.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.30.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.30.running_var
+ | -0.000 | -0.033 |  0.031 |  0.008 || model.32.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.32.bias
+ |  0.525 |  0.120 |  0.990 |  0.268 || model.33.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.33.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.33.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.33.running_var
+ | -0.000 | -0.037 |  0.032 |  0.008 || model.35.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.35.bias
+ |  0.529 |  0.110 |  0.992 |  0.259 || model.36.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.36.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.36.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.36.running_var
+ | -0.000 | -0.034 |  0.032 |  0.008 || model.38.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.38.bias
+ |  0.543 |  0.101 |  0.991 |  0.263 || model.39.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.39.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.39.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.39.running_var
+ |  0.000 | -0.034 |  0.034 |  0.008 || model.41.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.41.bias
+ |  0.566 |  0.143 |  0.986 |  0.238 || model.42.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.42.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.42.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.42.running_var
+ | -0.000 | -0.035 |  0.034 |  0.008 || model.44.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.44.bias
+ |  0.554 |  0.118 |  0.996 |  0.284 || model.45.weight
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.45.bias
+ |  0.000 |  0.000 |  0.000 |  0.000 || model.45.running_mean
+ |  1.000 |  1.000 |  1.000 |  0.000 || model.45.running_var
+ | -0.000 | -0.024 |  0.027 |  0.008 || model.47.weight
+ |  0.000 |  0.000 |  0.000 |    nan || model.47.bias
+
+20-05-18 19:30:33.056 : <epoch: 13, iter:     200, lr:1.000e-04> G_loss: 1.900e-02 
