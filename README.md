@@ -1,4 +1,4 @@
-# [PSRGAN.](https://ieeexplore.ieee.org/abstract/document/9424970/) 
+# [PSRGAN](https://ieeexplore.ieee.org/abstract/document/9424970/) 
 
 Official PyTorch implementation of the paper [Infrared Image Super-Resolution via Transfer Learning and PSRGAN](https://ieeexplore.ieee.org/abstract/document/9424970/) accepted in IEEE SPL.
 
