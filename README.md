@@ -29,7 +29,7 @@ Please check my [homepage](https://hyongsong.work/).
 
 ## Model
 
-Pre-trained models can be downloaded from this [site](10.6084/m9.figshare.16591973).
+Pre-trained models can be downloaded from this [site](https://hyongsong.work/).
 
 ## Evaluation
 
