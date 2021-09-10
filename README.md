@@ -62,4 +62,4 @@ If you meet any problems, please describe them and contact me.
 hyongsong.work@gmail.com
 
 ## Acknowledgement
-Thanks to Kai Zhang for his work.
+Thanks to [Kai Zhang](https://scholar.google.com.hk/citations?user=0RycFIIAAAAJ&hl) for his work.
