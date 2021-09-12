@@ -20,7 +20,7 @@ Recent advances in single image super-resolution (SISR) demonstrate the power of
 ## Requirements and dependencies
  * Python  3.7
  * Pytorch 0.4.1
- * CUDA Version: 10.2
+ * CUDA Version 10.2
  * TITAN X (Pascal)
  * Win10
 
