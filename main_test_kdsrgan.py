@@ -24,52 +24,6 @@ from data.select_dataset import define_Dataset
 from models.select_model import define_Model
 from models import enhance_model_gan as net
 
-'''
-Spyder (Python 3.6)
-PyTorch 1.1.0
-Windows 10 or Linux
-
-Kai Zhang (cskaizhang@gmail.com)
-github: https://github.com/cszn/KAIR
-
-If you have any question, please feel free to contact with me.
-Kai Zhang (e-mail: cskaizhang@gmail.com)
-(github: https://github.com/cszn/KAIR)
-
-by Kai Zhang (12/Dec./2019)
-'''
-
-"""
-# --------------------------------------------
-testing demo for RRDB-ESRGAN
-https://github.com/xinntao/ESRGAN
-@inproceedings{wang2018esrgan,
-  title={Esrgan: Enhanced super-resolution generative adversarial networks},
-  author={Wang, Xintao and Yu, Ke and Wu, Shixiang and Gu, Jinjin and Liu, Yihao and Dong, Chao and Qiao, Yu and Change Loy, Chen},
-  booktitle={European Conference on Computer Vision (ECCV)},
-  pages={0--0},
-  year={2018}
-}
-@inproceedings{ledig2017photo,
-  title={Photo-realistic single image super-resolution using a generative adversarial network},
-  author={Ledig, Christian and Theis, Lucas and Husz{\'a}r, Ferenc and Caballero, Jose and Cunningham, Andrew and Acosta, Alejandro and Aitken, Andrew and Tejani, Alykhan and Totz, Johannes and Wang, Zehan and others},
-  booktitle={IEEE conference on computer vision and pattern recognition},
-  pages={4681--4690},
-  year={2017}
-}
-# --------------------------------------------
-|--model_zoo                # model_zoo
-   |--msrresnet_x4_gan      # model_name, optimized for perceptual quality      
-   |--msrresnet_x4_psnr     # model_name, optimized for PSNR
-|--testset                  # testsets
-   |--set5                  # testset_name
-   |--srbsd68
-|--results                  # results
-   |--set5_msrresnet_x4_gan # result_name = testset_name + '_' + model_name
-   |--set5_msrresnet_x4_psnr
-# --------------------------------------------
-"""
-
 
 def main(json_path='options/train_msrresnet_gan_pr.json'):
 
