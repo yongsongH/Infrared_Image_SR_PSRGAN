@@ -19,16 +19,6 @@ from torchvision import models
 from models import enhance_model_gan as net
 
 
-'''
-# --------------------------------------------
-# training code for GAN-based model, such as ESRGAN, DPSRGAN
-# --------------------------------------------
-# Kai Zhang (cskaizhang@gmail.com)
-# github: https://github.com/cszn/KAIR
-# --------------------------------------------
-# https://github.com/xinntao/BasicSR
-# --------------------------------------------
-'''
 
 
 def main(json_path='options/train_kdsrgan.json'):
