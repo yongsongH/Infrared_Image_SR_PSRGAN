@@ -59,9 +59,9 @@ doi={10.1109/LSP.2021.3077801}}
 
 If you meet any problems, please describe them and contact me. 
 
-Impolite emails are not welcome. Thank you for understanding.
-
 hyongsong.work@gmail.com
+
+**Impolite emails are not welcome. Thank you for understanding.**
 
 ## Acknowledgement
 Thanks to [Kai Zhang](https://scholar.google.com.hk/citations?user=0RycFIIAAAAJ&hl) for his work.
