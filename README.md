@@ -35,6 +35,14 @@ Pre-trained models can be downloaded from this [site](https://figshare.com/artic
 ## Evaluation
 Creating a new folder named `model_zoo` is necessary, 
 please check the [log file](https://github.com/yongsongH/Infrared-Image_PSRGAN/blob/master/results/results-A_75000_G/results-A_75000_G.log) for more information about the settings.
+
+Setting up the following directory structure:
+
+    .
+    ├── model_zoo                   
+    |   ├──75000_G         # X4
+    |   |——5000_G          # X2 
+    
 ***
 Run 
 ```
