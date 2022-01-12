@@ -1,5 +1,9 @@
 # [PSRGAN](https://ieeexplore.ieee.org/abstract/document/9424970/) 
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/infrared-image-super-resolution-via-transfer/infrared-image-super-resolution-on-results-a)](https://paperswithcode.com/sota/infrared-image-super-resolution-on-results-a?p=infrared-image-super-resolution-via-transfer)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/infrared-image-super-resolution-via-transfer/infrared-image-super-resolution-on-results-c)](https://paperswithcode.com/sota/infrared-image-super-resolution-on-results-c?p=infrared-image-super-resolution-via-transfer)
+
 Official PyTorch implementation of the paper 
 [Infrared Image Super-Resolution via Transfer Learning and PSRGAN](https://ieeexplore.ieee.org/abstract/document/9424970/) accepted in [*IEEE SPL*](https://signalprocessingsociety.org/tags/ieee-spl-article).
 
