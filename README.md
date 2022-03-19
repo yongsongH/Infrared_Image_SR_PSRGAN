@@ -75,7 +75,7 @@ If you meet any problems, please describe them and contact me.
 
 hyongsong.work@gmail.com
 
-**Impolite emails are not welcome. Thank you for understanding.**
+**Impolite or anonymous emails are not welcome. Thank you for understanding.**
 
 ## Acknowledgement
 Thanks to [Kai Zhang](https://scholar.google.com.hk/citations?user=0RycFIIAAAAJ&hl) for his work.
