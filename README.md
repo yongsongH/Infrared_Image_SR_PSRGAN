@@ -71,9 +71,7 @@ doi={10.1109/LSP.2021.3077801}}
 
 ## Contact
 
-If you meet any problems, please describe them and contact me. 
-
-hyongsong.work@gmail.com
+If you meet any problems, please describe them and [contact](https://hyongsong.work/) me. 
 
 **Impolite or anonymous emails are not welcome. Thank you for understanding.**
 
