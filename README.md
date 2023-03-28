@@ -73,7 +73,7 @@ doi={10.1109/LSP.2021.3077801}}
 
 If you meet any problems, please describe them and [contact](https://hyongsong.work/) me. 
 
-**Impolite or anonymous emails are not welcome. Thank you for understanding.**
+**Impolite or anonymous emails are not welcome. There may be some difficulties for me to respond to the email without self-introduce. Thank you for understanding.**
 
 ## Acknowledgement
 Thanks to [Kai Zhang](https://scholar.google.com.hk/citations?user=0RycFIIAAAAJ&hl) for his work.
