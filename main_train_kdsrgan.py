@@ -116,7 +116,7 @@ def main(json_path='options/train_kdsrgan.json'):
     '''
 
 
-    # 模型加载
+    
     model = net.ModelGAN(opt)
 
     #######################################   Step 1   #############################################################
@@ -144,10 +144,10 @@ def main(json_path='options/train_kdsrgan.json'):
 
 
 
-    model.netG.load_state_dict(G_new_state_dict, strict=False)  # 参数加载
+    model.netG.load_state_dict(G_new_state_dict, strict=False)  
 
     # for k, v in D_state_dict.items():
-    #     name = str('module.' + k[0:])  # key值更新加一个module,多GPU训练出现的问题
+    #     name = str('module.' + k[0:]) 
     #     D_new_state_dict[name] = v
 
     # for k, v in G_state_dict.items():
